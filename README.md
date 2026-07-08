@@ -79,7 +79,7 @@ This project is being built as a passion project for that community.
 
 ## License
 
-MIT — Built for the boys who love big machines.
+MIT — Built for the folks who love big machines.
 
 ---
 
