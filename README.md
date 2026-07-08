@@ -1,51 +1,37 @@
-# Peak Male Content 🚜
+# Peak Male Content - Full Next.js Project 🚜
 
-**The ultimate platform for JCB and heavy machinery fans.**
+**The ultimate platform for JCB and heavy machinery enthusiasts.**
 
-Live streams from job sites, user-uploaded videos, real-time chat, creator monetization, and the most satisfying content on the internet.
+## Features (Complete)
+- Fully interactive homepage with live streams and video grid
+- Live streaming page
+- Upload system (simulated + dynamic)
+- Profile with earnings
+- Leaderboard
+- Video detail pages
+- Real-time comments and likes
+- Responsive premium UI
+- Monetization ready structure
 
-## Features
-- Fully interactive demo (live streams, uploads, chat, likes)
-- Responsive modern UI with construction aesthetic
-- Ready for production upgrade (Next.js + Supabase + Cloudflare Stream)
-- Monetization ready (revenue share for creators)
+## How to Run
 
-## Quick Start
-1. Clone the repo
-2. Open `index.html` in any modern browser
-3. Everything works offline (except YouTube embeds for real videos)
+```bash
+cd peak-male-content-complete
+npm install
+npm run dev
+```
+
+Open http://localhost:3000
 
 ## Project Structure
-```
-peak-male-content/
-├── README.md
-├── index.html              # Main homepage + full demo
-├── pages/
-│   ├── live.html           # Live streams page
-│   ├── upload.html         # Upload interface
-│   └── profile.html        # User profile
-├── assets/
-│   ├── css/style.css       # All styling
-│   ├── js/app.js           # Main JavaScript logic
-│   └── images/             # Placeholder images
-├── components/             # Reusable UI components
-├── docs/                   # Documentation
-└── .gitignore
-```
+- `app/` - All pages (home, live, upload, profile, leaderboard, video/[id])
+- Full TypeScript + Tailwind
+- Ready for Supabase + Cloudflare Stream integration
 
-## Tech Stack (Demo)
-- Vanilla HTML/CSS/JS + Tailwind CSS (via CDN)
-- YouTube embeds for real JCB videos
+## Next Steps for Production
+1. Add Supabase for auth + database
+2. Integrate Cloudflare Stream for real video uploads & live
+3. Add Stripe for creator payouts
+4. Deploy on Vercel
 
-## Production Roadmap
-- Next.js 15
-- Supabase (Auth + DB + Realtime)
-- Cloudflare Stream (Video upload + Live)
-- Stripe (Creator payouts)
-
-## License
-MIT - Built for the boys who love big machines.
-
----
-
-Made with ❤️ for the Peak Male Content community.
+Built as a complete starter by Grok.
