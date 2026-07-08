@@ -1,0 +1,63 @@
+/* Peak Male Content - Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+body {
+    font-family: 'Inter', system_ui, sans-serif;
+}
+
+.logo-font {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.section-header {
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.video-card {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.35);
+}
+
+.play-overlay {
+    transition: all 0.2s ease;
+}
+
+.video-card:hover .play-overlay {
+    background-color: rgba(249, 115, 22, 0.12);
+}
+
+.category-pill.active {
+    background-color: #f97316;
+    color: white;
+    border-color: #f97316;
+}
+
+.machine-gradient {
+    background: linear-gradient(145deg, #18181b 0%, #27251f 100%);
+}
+
+.live-badge {
+    animation: livePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes livePulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+}
+
+.modal {
+    animation: modalPopIn 0.22s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+@keyframes modalPopIn {
+    from { opacity: 0; transform: scale(0.94) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}

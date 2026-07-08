@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streams • Peak Male Content</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <div class="max-w-screen-2xl mx-auto px-6 py-12">
+        <h1 class="text-5xl font-black mb-8">Live Streams</h1>
+        <p class="text-xl text-zinc-400 mb-10">Real-time JCB action from job sites around the world.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="live-full-grid">
+            <!-- Populated dynamically -->
+        </div>
+    </div>
+    
+    <script>
+        // Simple live page logic
+        const liveStreams = [
+            { id: 101, title: "LIVE: JCB 3CX Digging 12ft Deep Basement", uploader: "LiveFromSite", viewers: 14200, location: "Manchester, UK" },
+            { id: 102, title: "LIVE: 220X Loading Articulated Dump Trucks", uploader: "QuarryLife", viewers: 8700, location: "Texas, USA" }
+        ];
+        
+        function renderLive() {
+            const container = document.getElementById('live-full-grid');
+            container.innerHTML = '';
+            liveStreams.forEach(s => {
+                const div = document.createElement('div');
+                div.className = 'bg-zinc-900 border border-zinc-700 rounded-3xl p-6';
+                div.innerHTML = `
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <div class="px-3 py-1 bg-red-500 text-xs font-bold inline-block rounded-2xl mb-3">LIVE</div>
+                            <h3 class="font-bold text-xl">${s.title}</h3>
+                        </div>
+                    </div>
+                    <div class="text-sm text-zinc-400">${s.uploader} • ${s.location}</div>
+                    <div class="mt-4 text-emerald-400 font-mono">${(s.viewers/1000).toFixed(1)}k watching</div>
+                    <button onclick="window.location.href='../index.html'" class="mt-6 w-full py-3 bg-orange-500 rounded-2xl font-bold">Watch Stream</button>
+                `;
+                container.appendChild(div);
+            });
+        }
+        
+        window.onload = renderLive;
+    </script>
+</body>
+</html>

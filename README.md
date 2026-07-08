@@ -1,24 +1,51 @@
-# Peak Male Content
+# Peak Male Content 🚜
 
-The ultimate platform for JCB and heavy machinery enthusiasts. Live streams, user uploads, community, and peak satisfaction.
+**The ultimate platform for JCB and heavy machinery fans.**
+
+Live streams from job sites, user-uploaded videos, real-time chat, creator monetization, and the most satisfying content on the internet.
 
 ## Features
-- Live streaming from job sites
-- Video uploads
-- Real-time chat
-- Creator monetization ready
-- Responsive modern UI
+- Fully interactive demo (live streams, uploads, chat, likes)
+- Responsive modern UI with construction aesthetic
+- Ready for production upgrade (Next.js + Supabase + Cloudflare Stream)
+- Monetization ready (revenue share for creators)
 
-## Tech Stack
-- HTML/CSS/JS (static demo)
-- Ready for Next.js + Supabase + Cloudflare Stream upgrade
-
-## How to Run
-Open `index.html` in browser.
+## Quick Start
+1. Clone the repo
+2. Open `index.html` in any modern browser
+3. Everything works offline (except YouTube embeds for real videos)
 
 ## Project Structure
-- `index.html` - Main homepage
-- `pages/` - Additional pages
-- `assets/` - CSS, JS, images
+```
+peak-male-content/
+├── README.md
+├── index.html              # Main homepage + full demo
+├── pages/
+│   ├── live.html           # Live streams page
+│   ├── upload.html         # Upload interface
+│   └── profile.html        # User profile
+├── assets/
+│   ├── css/style.css       # All styling
+│   ├── js/app.js           # Main JavaScript logic
+│   └── images/             # Placeholder images
+├── components/             # Reusable UI components
+├── docs/                   # Documentation
+└── .gitignore
+```
 
-Built as a complete demo by Grok.
+## Tech Stack (Demo)
+- Vanilla HTML/CSS/JS + Tailwind CSS (via CDN)
+- YouTube embeds for real JCB videos
+
+## Production Roadmap
+- Next.js 15
+- Supabase (Auth + DB + Realtime)
+- Cloudflare Stream (Video upload + Live)
+- Stripe (Creator payouts)
+
+## License
+MIT - Built for the boys who love big machines.
+
+---
+
+Made with ❤️ by Grok for the Peak Male Content community.
