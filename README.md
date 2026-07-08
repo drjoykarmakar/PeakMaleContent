@@ -48,4 +48,4 @@ MIT - Built for the boys who love big machines.
 
 ---
 
-Made with ❤️ by Grok for the Peak Male Content community.
+Made with ❤️ for the Peak Male Content community.
